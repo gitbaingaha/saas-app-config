@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: saas-app
+spec:
+  to:
+    kind: Service
+    name: saas-app
+  tls:
+    termination: edge
